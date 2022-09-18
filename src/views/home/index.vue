@@ -1,5 +1,6 @@
 <template>
-  <div class="home-wrapper">
+  <MobileHome v-if="isMobile" />
+  <div v-else class="home-wrapper">
     <div class="banner-wrapper">
       <img class="text-big" src="/img/PANDA PUNK 2169.png" />
       <div class="explore" @click="explore">Explore</div>
@@ -47,9 +48,11 @@
       <div class="title">OUR HEROES</div>
       <div class="content">
         <a-row :gutter="[12, 112]">
-          <a-col class="hero-box" v-for="(v, i) in heros" :key="i" :span="8">
-            <img class="hero" :src="v.img" />
-            <div class="hero-name" @click="heroDetail(v)">View Stats</div>
+          <a-col v-for="(v, i) in heros" :key="i" :xxl="8" :xl="12" :md="24">
+            <div class="hero-box">
+              <img class="hero" :src="v.img" />
+              <div class="hero-name" @click="heroDetail(v)">View Stats</div>
+            </div>
           </a-col>
         </a-row>
       </div>
@@ -60,19 +63,17 @@
   </div>
   <HeroModal v-model:visible="heroDetailVisible" :img="img" />
   <ConnectWallet v-model:visible="connectVisible" />
-  <!-- <MintModal v-model:visible="mintVisible" /> -->
 </template>
 <script setup>
 import { onMounted, onUnmounted, reactive, ref } from "vue";
+import { useMediaQuery } from "@vueuse/core";
 import HeroModal from "@/components/HeroModal/index.vue";
-import MintModal from "@/components/MintModal/index.vue";
 import ConnectWallet from "@/components/ConnectWallet/index.vue";
-import { getWeb3 } from "@/utils/web3";
+import MobileHome from './mobile.vue'
 
-const web3js = ref();
+const isMobile = useMediaQuery("(max-width: 750px)");
 const heroDetailVisible = ref(false);
 const connectVisible = ref(false);
-const mintVisible = ref(true);
 const img = ref();
 const heros = ref([
   {
