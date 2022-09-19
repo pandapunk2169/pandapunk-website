@@ -4,8 +4,12 @@
     <div class="banner-wrapper">
       <img class="text-big" src="/img/PANDA PUNK 2169.png" />
       <div class="explore" @click="explore">Explore</div>
+      <div
+        class="scroll-button"
+        @click="goTop"
+      ></div>
     </div>
-    <div class="real-wrapper">
+    <div class="real-wrapper" id="RealWapper">
       <div class="title">REVELATION</div>
       <div class="content">
         <div class="left-content">
@@ -69,7 +73,7 @@ import { onMounted, onUnmounted, reactive, ref } from "vue";
 import { useMediaQuery } from "@vueuse/core";
 import HeroModal from "@/components/HeroModal/index.vue";
 import ConnectWallet from "@/components/ConnectWallet/index.vue";
-import MobileHome from './mobile.vue'
+import MobileHome from "./mobile.vue";
 
 const isMobile = useMediaQuery("(max-width: 750px)");
 const heroDetailVisible = ref(false);
@@ -112,6 +116,10 @@ const heroDetail = (v) => {
 
 const explore = () => {
   connectVisible.value = true;
+};
+
+const goTop = () => {
+  document.getElementById("RealWapper").scrollIntoView();
 };
 </script>
 <style lang="less" scoped>

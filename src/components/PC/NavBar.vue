@@ -22,10 +22,12 @@
     </header>
     <div class="line"></div>
   </div>
+  <ConnectWallet v-model:visible="connectVisible" />
 </template>
 <script setup>
 import { onMounted, onUnmounted, reactive, ref, watch } from "vue";
 import { useRouter, useRoute } from "vue-router";
+import ConnectWallet from "@/components/ConnectWallet/index.vue";
 const router = useRouter();
 const route = useRoute();
 

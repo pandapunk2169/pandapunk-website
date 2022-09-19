@@ -3,7 +3,7 @@
     <div class="Modal">
       <div class="wrapper">
         <div class="nav">
-          <div class="title">Select to buy</div>
+          <div class="title">Select A Wallet</div>
           <div class="icon-close">
             <img src="/svg/close.svg" @click="close" />
           </div>
@@ -38,7 +38,7 @@ defineProps({
 const emits = defineEmits(["update:visible"]);
 
 const connectMateMask = async () => {
-    console.log('connectMateMask')
+  console.log("connectMateMask");
   if (typeof window.ethereum === "undefined") {
     window.open("https://metamask.io/download/");
     return;
@@ -67,6 +67,7 @@ const close = () => {
   .wrapper {
     height: 417.6236572265625px;
     width: 558.9033813476562px;
+
     border-radius: 0px;
     margin: 200px auto;
     border: 5px solid;
@@ -79,6 +80,19 @@ const close = () => {
       #406aff 117.04%
     );
     padding: 26px;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      height: 350px;
+      border: 3px solid;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(
+        92.23deg,
+        #ff56f6 21.43%,
+        #b936ee 50.63%,
+        #3bace2 100%,
+        #406aff 117.04%
+      );
+    }
 
     background: rgba(0, 0, 0, 0.38);
     .nav {
@@ -91,6 +105,9 @@ const close = () => {
         font-weight: 700;
         font-size: 24px;
         line-height: 137.4%;
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+        }
         /* identical to box height, or 33px */
 
         color: #ffffff;
@@ -125,6 +142,9 @@ const close = () => {
         margin: 30px 0;
         &:first-child {
           margin-top: 60px;
+          @media screen and (max-width: 768px) {
+            margin-top: 30px; 
+          }
         }
         .label {
           font-family: "Orbitron";
@@ -133,8 +153,16 @@ const close = () => {
           font-size: 24px;
           line-height: 137.4%;
           /* identical to box height, or 33px */
-
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
           color: #ffffff;
+        }
+        @media screen and (max-width: 768px) {
+          .value {
+            width: 32px;
+            height: 31px;
+          }
         }
       }
       .tip {

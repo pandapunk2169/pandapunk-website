@@ -1,8 +1,9 @@
 .home-wrapper {
   .navbar-wrapper {
     width: 100%;
-    // position: sticky;
+    position: fixed;
     top: 0;
+    z-index: 999;
     .line {
       height: 2px;
       background: linear-gradient(272.52deg, #ffa6fa 47.49%, #3c79d5 98.81%);
@@ -10,8 +11,8 @@
     header {
       width: 100%;
       height: 104px;
-      // background: rgba(0, 0, 0, 0);
-      background: black;
+      background: rgba(0, 0, 0, 0.7);
+      // background: black;
       //   backdrop-filter: blur(2px);
       padding: 35px 56px;
       display: flex;
@@ -30,7 +31,7 @@
           font-family: "Orbitron";
           font-style: normal;
           font-weight: 600;
-          font-size: 14px;
+          font-size: 16px;
           line-height: 18px;
           text-transform: uppercase;
           color: #ffffff;
@@ -56,6 +57,7 @@
           align-items: center;
           margin-left: 22px;
           gap: 10px;
+          font-family: "Orbitron";
           font-weight: 700;
           font-size: 15px;
           color: white;
@@ -89,8 +91,10 @@
   }
   .banner-wrapper {
     width: 100%;
-    height: 792px;
-    background: rgba(0, 0, 0, 0.7);
+    height: 900px;
+    background: rgba(0, 0, 0, 0.6);
+    background: url("/img/banner.jpg") no-repeat center;
+    background-size: cover;
     overflow: hidden;
     .text-big {
       width: 100%;
@@ -98,7 +102,7 @@
       object-fit: contain;
       display: block;
       margin: 0 auto;
-      margin-top: 108px;
+      margin-top: 260px;
       padding: 0 152px;
     }
     .explore {
@@ -108,6 +112,7 @@
       align-items: center;
       padding: 18px 96px 19px;
       gap: 10px;
+      font-family: "Orbitron";
       font-size: 15px;
       font-weight: 700;
       color: white;
@@ -122,19 +127,32 @@
         #3bace2 100%,
         #406aff 117.04%
       );
-      box-shadow: 0px 4px 97px rgba(255, 86, 246, 0.51);
+      box-shadow: 0px 4px 97px 0px rgba(255, 86, 246, 0.51);
+
       backdrop-filter: blur(96px);
       /* Note: backdrop-filter has minimal browser support */
 
-      border-radius: 2px solid;
-      border-image-slice: 1;
+      // border-radius: 5px solid;
+      border-image-slice: fill;
+      border: 2px solid;
+
       border-image-source: linear-gradient(
         272.52deg,
         #ffa6fa 47.49%,
         #3c79d5 98.81%
       );
+
       margin: 0 auto;
       margin-top: 104px;
+      cursor: pointer;
+    }
+    .scroll-button {
+      position: absolute;
+      width: 71px;
+      height: 71px;
+      left: calc(100vw / 2 - 71px / 2);
+      top: 800px;
+      background: url('/svg/scroll.svg') no-repeat center;
       cursor: pointer;
     }
   }
@@ -143,6 +161,8 @@
     min-height: 620px;
     padding: 66px 205px;
     background: rgba(136, 30, 173, 0.83);
+    background: url("/svg/real-bg.svg") no-repeat;
+    background-size: cover;
     .title {
       font-family: "Orbitron";
       font-style: normal;
@@ -186,6 +206,9 @@
     width: 100%;
     min-height: 1943.19px;
     background: rgba(0, 0, 0, 0.83);
+    background: url("/svg/herohomebg.svg") no-repeat;
+    background-size: cover;
+    background-position: center center;
     padding: 90px 268px;
     .title {
       font-family: "Orbitron";

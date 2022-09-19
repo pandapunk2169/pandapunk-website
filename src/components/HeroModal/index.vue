@@ -96,7 +96,7 @@ const close = () => {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 100;
+  z-index: 1000;
   top: 0;
   background: rgba(0, 0, 0, 0.7);
   .wrapper {

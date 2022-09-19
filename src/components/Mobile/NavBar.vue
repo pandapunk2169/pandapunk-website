@@ -18,6 +18,12 @@
         {{ v.title }}
       </div>
     </div>
+    <div class="icons-wrapper">
+      <img class="icon" src="/icon/twitter.png" />
+      <img class="icon" src="/icon/icon1.png" />
+      <img class="icon" src="/icon/Telegram.png" />
+      <img class="icon" src="/icon/Logomark.png" />
+    </div>
   </div>
 </template>
 <script setup>
@@ -55,6 +61,7 @@ const openModal = () => {
   width: 100%;
   padding: 24px 26px;
   background: black;
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,7 +80,8 @@ const openModal = () => {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(5px);
   z-index: 100;
   .menu-list {
     padding: 43px 26px;
@@ -90,8 +98,22 @@ const openModal = () => {
       padding-bottom: 10px;
     }
     .item-active {
+      width: 100px;
       border-bottom: 2px solid rgba(255, 86, 245, 1);
     }
+  }
+}
+
+.icons-wrapper {
+  width: 180px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 57px auto 10px auto;
+  .icon {
+    width: 24px;
+    height: 100%;
   }
 }
 </style>
