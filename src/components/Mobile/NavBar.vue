@@ -66,8 +66,8 @@ const openModal = () => {
   justify-content: space-between;
   align-items: center;
   .logo {
-    height: 32px;
-    width: 33px;
+    height: 80px;
+    width: 80px;
   }
   .menu {
     width: 32px;

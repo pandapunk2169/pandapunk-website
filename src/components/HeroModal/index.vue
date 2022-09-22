@@ -6,51 +6,51 @@
           <img src="/svg/close.svg" @click="close" />
         </div>
         <div class="content">
-          <img class="hero-img" :src="img" alt="" />
+          <img class="hero-img" :src="attrs.img" alt="" />
           <div class="attrs">
             <div class="title1">PANDA PUNK 2169 //////</div>
             <div class="title2">HERO STATS</div>
             <div class="table-block">
               <div class="table-item">
                 <div class="item">
-                  <div class="sub-title">PROFESSION</div>
-                  <div class="sub-title1">NAME</div>
+                  <div class="sub-title">CHARACTER</div>
+                  <div class="sub-title1">{{ attrs.Character }}</div>
                 </div>
                 <div class="item">
-                  <div class="sub-title">FACE</div>
-                  <div class="sub-title1">FACE</div>
+                  <div class="sub-title">GENDER</div>
+                  <div class="sub-title1">{{ attrs.Gender }}</div>
                 </div>
                 <div class="item">
-                  <div class="sub-title">ARMOR</div>
-                  <div class="sub-title1">ARMOR</div>
-                </div>
-                <div class="item">
-                  <div class="sub-title">BOOK</div>
-                  <div class="sub-title1">BOOK</div>
-                </div>
-              </div>
-              <div class="table-item">
-                <div class="item">
-                  <div class="sub-title">HAIR</div>
-                  <div class="sub-title1">HAIR</div>
+                  <div class="sub-title">LEVEL</div>
+                  <div class="sub-title1">{{ attrs.Level }}</div>
                 </div>
                 <div class="item">
                   <div class="sub-title">WEAPON</div>
-                  <div class="sub-title1">WEAPON</div>
-                </div>
-                <div class="item">
-                  <div class="sub-title">PANTS</div>
-                  <div class="sub-title1">PANTS</div>
-                </div>
-                <div class="item">
-                  <div class="sub-title">HEAD GEAR</div>
-                  <div class="sub-title1">HEADGEAR</div>
+                  <div class="sub-title1">{{ attrs.Weapon }}</div>
                 </div>
               </div>
               <div class="table-item">
                 <div class="item">
-                  <div class="sub-title">RANK</div>
-                  <div class="sub-title1">RANK</div>
+                  <div class="sub-title">BODY</div>
+                  <div class="sub-title1">{{ attrs.Body }}</div>
+                </div>
+                <div class="item">
+                  <div class="sub-title">PANTS</div>
+                  <div class="sub-title1">{{ attrs.Pants }}</div>
+                </div>
+                <div class="item">
+                  <div class="sub-title">CLOTHING</div>
+                  <div class="sub-title1">{{ attrs.Clothing }}</div>
+                </div>
+                <div class="item">
+                  <div class="sub-title">DECORATE</div>
+                  <div class="sub-title1">{{ attrs.Decorate }}</div>
+                </div>
+              </div>
+              <div class="table-item">
+                <div class="item">
+                  <div class="sub-title">MASK</div>
+                  <div class="sub-title1">{{ attrs.Mask }}</div>
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@
             </div>
           </div>
         </div>
-        <div class="date">03.06.2077 //////</div>
+        <div class="date">{{ attrs.date }} //////</div>
       </div>
     </div>
   </teleport>
@@ -79,8 +79,9 @@ defineProps({
     required: true,
     default: false,
   },
-  img: {
-    type: String,
+  attrs: {
+    type: Object,
+    default: () => ({}),
   },
 });
 
@@ -100,7 +101,7 @@ const close = () => {
   top: 0;
   background: rgba(0, 0, 0, 0.7);
   .wrapper {
-    height: 690px;
+    min-height: 690px;
     width: 1082px;
     margin: 100px auto;
     border: 5px solid;

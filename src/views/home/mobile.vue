@@ -52,50 +52,21 @@
       </a-carousel>
     </div>
 
-    <HeroModalMobile v-model:visible="heroVisible" :img="img" />
+    <HeroModalMobile v-model:visible="heroVisible" :attrs="attrs" />
   </div>
 </template>
 <script setup>
 import { ref } from "vue";
 import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons-vue";
 import HeroModalMobile from '@/components/HeroModal/mobile.vue'
+import { heros } from './index'
 
 const heroVisible = ref(false)
 
-const heros = ref([
-  {
-    img: "/hero/暗黑-初级-劳工2-10.png",
-  },
-  {
-    img: "/hero/暗黑-初级-劳工7-10.png",
-  },
-  {
-    img: "/hero/暗黑-初级-劳工9-10.png",
-  },
-  {
-    img: "/hero/暗黑-套装-死亡骑士1-1.png",
-  },
-  {
-    img: "/hero/暗黑-中级-祭祀1-3.png",
-  },
-  {
-    img: "/hero/暗黑-中级-矿工1-2.png",
-  },
-  {
-    img: "/hero/暗黑-中级-矿工2-2.png",
-  },
-  {
-    img: "/hero/神圣-套装-圣殿骑士1-1.png",
-  },
-  {
-    img: "/hero/神圣-套装-圣战士1-1.png",
-  },
-]);
-
-const img = ref('')
+const attrs = ref({})
 const openModal = (v)=>{
   heroVisible.value = true
-  img.value = v.img
+  attrs.value = v
 }
 
 const goTop = () => {
