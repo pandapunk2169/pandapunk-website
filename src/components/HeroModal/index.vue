@@ -8,7 +8,7 @@
         <div class="content">
           <img class="hero-img" :src="img" alt="" />
           <div class="attrs">
-            <div class="title1">panda punk 1433 //////</div>
+            <div class="title1">PANDA PUNK 2169 //////</div>
             <div class="title2">HERO STATS</div>
             <div class="table-block">
               <div class="table-item">

@@ -3,7 +3,7 @@
     <div class="Modal">
       <div class="wrapper">
         <div class="icon-close">
-          <div class="title1">panda punk 1433 //////</div>
+          <div class="title1">PANDA PUNK 2169 //////</div>
           <img src="/svg/close.svg" @click="close" />
         </div>
         <div style="text-align: center">

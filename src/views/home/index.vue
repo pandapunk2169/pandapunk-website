@@ -4,10 +4,7 @@
     <div class="banner-wrapper">
       <img class="text-big" src="/img/PANDA PUNK 2169.png" />
       <div class="explore" @click="explore">Explore</div>
-      <div
-        class="scroll-button"
-        @click="goTop"
-      ></div>
+      <div class="scroll-button" @click="goTop"></div>
     </div>
     <div class="real-wrapper" id="RealWapper">
       <div class="title">REVELATION</div>
@@ -97,6 +94,15 @@ const heros = ref([
   },
   {
     img: "/hero/暗黑-中级-矿工1-2.png",
+  },
+  {
+    img: "/hero/暗黑-中级-矿工2-2.png",
+  },
+  {
+    img: "/hero/神圣-套装-圣殿骑士1-1.png",
+  },
+  {
+    img: "/hero/神圣-套装-圣战士1-1.png",
   },
   {
     img: "/hero/暗黑-中级-矿工2-2.png",

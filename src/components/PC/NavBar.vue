@@ -17,7 +17,7 @@
         <img class="icon" src="/icon/icon1.png" />
         <img class="icon" src="/icon/Telegram.png" />
         <img class="icon" src="/icon/Logomark.png" />
-        <div class="sold-out" @click="soldOut">Sold Out</div>
+        <div class="sold-out" @click="soldOut">Connect Wallet</div>
       </div>
     </header>
     <div class="line"></div>
@@ -38,10 +38,10 @@ const navbar = ref([
     title: "HOME",
     path: "/home",
   },
-  {
-    title: "MINT",
-    path: "/mint",
-  },
+  // {
+  //   title: "MINT",
+  //   path: "/mint",
+  // },
 ]);
 
 const soldOut = () => {

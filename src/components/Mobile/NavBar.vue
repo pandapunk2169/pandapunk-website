@@ -40,10 +40,10 @@ const navbar = ref([
     title: "HOME",
     path: "/home",
   },
-  {
-    title: "MINT",
-    path: "/mint",
-  },
+  // {
+  //   title: "MINT",
+  //   path: "/mint",
+  // },
 ]);
 
 const goPage = (v) => {

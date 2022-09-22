@@ -1,6 +1,6 @@
 <template>
   <div class="footer-mobile-wrapper">
-    <img class="logo" src="/svg/Vector.svg" alt="" />
+    <!-- <img class="logo" src="/svg/Vector.svg" alt="" />
     <div class="content1">
       Nec, enim sed lacus, magna pharetra. Phasellus tincidunt nulla pharetra
       gravida est.
@@ -22,14 +22,14 @@
         <div>Author Profile</div>
         <div>Collection</div>
       </div>
-    </div>
+    </div> -->
     <div class="icons-wrapper">
       <img class="icon" src="/icon/twitter.png" />
       <img class="icon" src="/icon/icon1.png" />
       <img class="icon" src="/icon/Telegram.png" />
       <img class="icon" src="/icon/Logomark.png" />
     </div>
-    <div class="tip">All rights reserved@2021</div>
+    <div class="tip">PandaPunk2169 Copyright@2022</div>
   </div>
 </template>
 <style lang="less" scoped>

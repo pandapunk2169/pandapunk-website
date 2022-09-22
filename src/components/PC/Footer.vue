@@ -1,6 +1,6 @@
 <template>
   <div class="footer-wrapper">
-    <div class="box">
+    <!-- <div class="box">
       <div class="left">
         <img src="/svg/Vector.svg" alt="" />
         <div class="content">
@@ -28,14 +28,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="icons">
       <img class="icon" src="/icon/twitter.png" />
       <img class="icon" src="/icon/icon1.png" />
       <img class="icon" src="/icon/Telegram.png" />
       <img class="icon" src="/icon/Logomark.png" />
     </div>
-    <div class="tips">All rights reserved@2022</div>
+    <div class="tips">PandaPunk2169 Copyright@2022</div>
   </div>
 </template>
 <style lang="less" scoped>
