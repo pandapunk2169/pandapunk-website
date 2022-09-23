@@ -12,7 +12,7 @@ export const heros = [
     Clothing: "Golden",
     Decorate: "Cloak Brown",
     Mask: "Glasses",
-    date: "03.06.2022",
+    date: "02001",
   },
   {
     img: "/hero/02.png",
@@ -27,7 +27,7 @@ export const heros = [
     Clothing: "Golden",
     Decorate: "Cloak Brown",
     Mask: "Glasses",
-    date: "03.07.2022",
+    date: "03002",
   },
   {
     img: "/hero/03.png",
@@ -42,7 +42,7 @@ export const heros = [
     Clothing: "Red",
     Decorate: "Hair Pink",
     Mask: "Green",
-    date: "03.08.2022",
+    date: "09001",
   },
   {
     img: "/hero/04.png",
@@ -57,7 +57,7 @@ export const heros = [
     Clothing: "Red",
     Decorate: "Red",
     Mask: "Green",
-    date: "03.09.2022",
+    date: "13002",
   },
   {
     img: "/hero/05.png",
@@ -72,7 +72,7 @@ export const heros = [
     Clothing: "Brown",
     Decorate: "Glasses Orange",
     Mask: "Green",
-    date: "03.10.2022",
+    date: "03802",
   },
   {
     img: "/hero/06.png",
@@ -87,7 +87,7 @@ export const heros = [
     Clothing: "Brown",
     Decorate: "Grey",
     Mask: "Green",
-    date: "03.11.2022",
+    date: "33002",
   },
   {
     img: "/hero/07.png",
@@ -102,7 +102,7 @@ export const heros = [
     Clothing: "Red",
     Decorate: "Red",
     Mask: "Red",
-    date: "03.12.2022",
+    date: "03809",
   },
   {
     img: "/hero/08.png",
@@ -117,7 +117,7 @@ export const heros = [
     Clothing: "Red",
     Decorate: "Red",
     Mask: "Red",
-    date: "03.13.2022",
+    date: "56002",
   },
   {
     img: "/hero/09.png",
@@ -132,7 +132,7 @@ export const heros = [
     Clothing: "Red",
     Decorate: "Red",
     Mask: "Red",
-    date: "03.14.2022",
+    date: "56602",
   },
   {
     img: "/hero/10.png",
@@ -147,7 +147,7 @@ export const heros = [
     Clothing: "Red",
     Decorate: "Red",
     Mask: "Red",
-    date: "03.15.2022",
+    date: "16062",
   },
   {
     img: "/hero/11.png",
@@ -162,7 +162,7 @@ export const heros = [
     Clothing: "Green",
     Decorate: "Green",
     Mask: "Green",
-    date: "03.16.2022",
+    date: "56432",
   },
   {
     img: "/hero/12.png",
@@ -177,6 +177,6 @@ export const heros = [
     Clothing: "Green",
     Decorate: "Green",
     Mask: "Earrings",
-    date: "03.17.2022",
+    date: "16806",
   },
 ];
