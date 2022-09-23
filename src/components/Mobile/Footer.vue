@@ -34,7 +34,7 @@
 </template>
 <style lang="less" scoped>
 .footer-mobile-wrapper {
-  height: 621.3814086914062px;
+  // height: 621.3814086914062px;
   width: 100%;
   background: #251928;
   padding: 22px 75px;
@@ -89,7 +89,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 57px auto 10px auto;
+    margin: 20px auto 10px auto;
     .icon {
       width: 24px;
       height: 100%;

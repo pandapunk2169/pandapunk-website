@@ -48,8 +48,8 @@
     <div class="our-hero-wrapper">
       <div class="title">OUR HEROES</div>
       <div class="content">
-        <a-row :gutter="[12, 112]">
-          <a-col v-for="(v, i) in heros" :key="i" :xxl="8" :xl="12" :md="24">
+        <a-row :gutter="[12, 120]">
+          <a-col v-for="(v, i) in heros" :key="i" :xxl="6" :xl="8"  :md="12"  :xs="24">
             <div class="hero-box">
               <img class="hero" :src="v.img" />
               <div class="hero-name" @click="heroDetail(v)">View Stats</div>
@@ -62,7 +62,7 @@
       <div class="title">JOIN THE PANDA PUNKS.</div>
     </div> -->
   </div>
-  <HeroModal v-model:visible="heroDetailVisible" :img="img" />
+  <HeroModal v-model:visible="heroDetailVisible" :attrs="attrs" />
   <ConnectWallet v-model:visible="connectVisible" />
 </template>
 <script setup>
@@ -71,53 +71,16 @@ import { useMediaQuery } from "@vueuse/core";
 import HeroModal from "@/components/HeroModal/index.vue";
 import ConnectWallet from "@/components/ConnectWallet/index.vue";
 import MobileHome from "./mobile.vue";
+import { heros } from './index'
 
 const isMobile = useMediaQuery("(max-width: 750px)");
 const heroDetailVisible = ref(false);
 const connectVisible = ref(false);
-const img = ref();
-const heros = ref([
-  {
-    img: "/hero/暗黑-初级-劳工2-10.png",
-  },
-  {
-    img: "/hero/暗黑-初级-劳工7-10.png",
-  },
-  {
-    img: "/hero/暗黑-初级-劳工9-10.png",
-  },
-  {
-    img: "/hero/暗黑-套装-死亡骑士1-1.png",
-  },
-  {
-    img: "/hero/暗黑-中级-祭祀1-3.png",
-  },
-  {
-    img: "/hero/暗黑-中级-矿工1-2.png",
-  },
-  {
-    img: "/hero/暗黑-中级-矿工2-2.png",
-  },
-  {
-    img: "/hero/神圣-套装-圣殿骑士1-1.png",
-  },
-  {
-    img: "/hero/神圣-套装-圣战士1-1.png",
-  },
-  {
-    img: "/hero/暗黑-中级-矿工2-2.png",
-  },
-  {
-    img: "/hero/神圣-套装-圣殿骑士1-1.png",
-  },
-  {
-    img: "/hero/神圣-套装-圣战士1-1.png",
-  },
-]);
+const attrs = ref()
 
 const heroDetail = (v) => {
   heroDetailVisible.value = true;
-  img.value = v.img;
+  attrs.value = v;
 };
 
 const explore = () => {

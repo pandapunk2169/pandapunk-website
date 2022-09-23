@@ -6,62 +6,64 @@
           <div class="title1">PANDA PUNK 2169 //////</div>
           <img src="/svg/close.svg" @click="close" />
         </div>
-        <div style="text-align: center">
-          <img class="hero-img" :src="img" alt="" />
-        </div>
-        <div class="attrs">
-          <div class="title">
-            <div>HERO STATS</div>
-            <div class="line"></div>
+        <div class="content-wrapper">
+          <div style="text-align: center">
+            <img class="hero-img" :src="attrs.img" alt="" />
           </div>
-          <div class="table-wrapper">
-            <div class="table-item-wrap">
-              <div class="table-item">
-                <div class="table-item-title">PROFESSION</div>
-                <div class="table-item-value">NAME</div>
+          <div class="attrs">
+            <div class="title">
+              <div>HERO STATS</div>
+              <div class="line"></div>
+            </div>
+            <div class="table-wrapper">
+              <div class="table-item-wrap">
+                <div class="table-item">
+                  <div class="table-item-title">CHARACTER</div>
+                  <div class="table-item-value">{{ attrs.Character }}</div>
+                </div>
+                <div class="table-item">
+                  <div class="table-item-title">GENDER</div>
+                  <div class="table-item-value">{{ attrs.Gender }}</div>
+                </div>
+                <div class="table-item">
+                  <div class="table-item-title">LEVEL</div>
+                  <div class="table-item-value">{{ attrs.Level }}</div>
+                </div>
+                <div class="table-item">
+                  <div class="table-item-title">WEAPON</div>
+                  <div class="table-item-value">{{ attrs.Weapon }}</div>
+                </div>
               </div>
-              <div class="table-item">
-                <div class="table-item-title">FACE</div>
-                <div class="table-item-value">FACE</div>
-              </div>
-              <div class="table-item">
-                <div class="table-item-title">ARMOR</div>
-                <div class="table-item-value">ARMOR</div>
-              </div>
-              <div class="table-item">
-                <div class="table-item-title">BODY</div>
-                <div class="table-item-value">BODY</div>
+              <div class="table-item-wrap">
+                <div class="table-item">
+                  <div class="table-item-title">BODY</div>
+                  <div class="table-item-value">{{ attrs.Body }}</div>
+                </div>
+                <div class="table-item">
+                  <div class="table-item-title">PANTS</div>
+                  <div class="table-item-value">{{ attrs.Pants }}</div>
+                </div>
+                <div class="table-item">
+                  <div class="table-item-title">CLOTHING</div>
+                  <div class="table-item-value">{{ attrs.Clothing }}</div>
+                </div>
+                <div class="table-item">
+                  <div class="table-item-title">DECORATE</div>
+                  <div class="table-item-value">{{ attrs.Decorate }}</div>
+                </div>
               </div>
             </div>
-            <div class="table-item-wrap">
-              <div class="table-item">
-                <div class="table-item-title">HAIR</div>
-                <div class="table-item-value">HAIR</div>
-              </div>
-              <div class="table-item">
-                <div class="table-item-title">WEAPON</div>
-                <div class="table-item-value">WEAPON</div>
-              </div>
-              <div class="table-item">
-                <div class="table-item-title">PANTH</div>
-                <div class="table-item-value">PANTH</div>
-              </div>
-              <div class="table-item">
-                <div class="table-item-title">HEADGER</div>
-                <div class="table-item-value">HEADGER</div>
-              </div>
+            <div class="attr">
+              <div class="title3">BACKGROUND</div>
+              <div class="title4">CURRENTLY SYNTHESYSING...</div>
+            </div>
+            <div class="attr">
+              <div class="title3">DESCRIPTION</div>
+              <div class="title4">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR.</div>
             </div>
           </div>
-          <div class="attr">
-            <div class="title3">BACKGROUND</div>
-            <div class="title4">CURRENTLY SYNTHESYSING...</div>
-          </div>
-          <div class="attr">
-            <div class="title3">DESCRIPTION</div>
-            <div class="title4">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR.</div>
-          </div>
+          <div class="date">{{ attrs.date }} //////</div>
         </div>
-        <div class="date">03.06.2077 //////</div>
       </div>
     </div>
   </teleport>
@@ -76,8 +78,9 @@ defineProps({
     required: true,
     default: false,
   },
-  img: {
-    type: String,
+  attrs: {
+    type: Object,
+    default: () => ({}),
   },
 });
 
@@ -135,6 +138,16 @@ const close = () => {
       img {
         height: 27px;
         width: 27px;
+      }
+    }
+    .content-wrapper {
+      width: 100%;
+      height: 670px;
+      margin-top: 20px;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        width: 0px;
+        height: 6px;
       }
     }
     .hero-img {
