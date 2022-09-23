@@ -8,29 +8,38 @@
     <div class="the-story" id="TheStory">
       <div class="title">THE STORY</div>
       <div class="content1">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis cras
-        lobortis cursus quisque risus. Amet, vivamus pharetra leo interdum a
-        viverra in eu. Eu sed mauris, varius morbi vivamus montes. Magna amet,
-        elementum sed in. Sit egestas id pharetra et consequat, pharetra
-        sagittis, pretium. Et sed consequat turpis laoreet ligula non. Quam
-        nunc, porttitor semper integer. Id molestie leo tortor libero quis quis
-        egestas.
+        In 2023, the World War III broke out and ended in nuclear war, Human
+        civilization disappeared...
         <br />
         <br />
-        Nisl, ullamcorper elit, integer tristique consectetur. Urna convallis
-        libero, urna id a cras nisl. Aliquet dictum felis nunc, metus, volutpat
-        purus risus donec ipsum.
+        In 2035, the surviving Panda Family, due to the contamination of nuclear
+        radiation, had genetic mutations in their bodies, evolved into a high-IQ
+        race, and began to rule the Earth...
+        <br />
+        <br />
+        In 2058, due to the destruction of nuclear pollution and war, the
+        earth's homeland has become uninhabitable, the panda family began to
+        seek immigration to Mars, and the MarsPanda plan began to be
+        implemented...
       </div>
       <div class="content2">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis cras
-        lobortis cursus quisque risus. Amet, vivamus pharetra leo interdum a
-        viverra in eu. Eu sed mauris, varius morbi vivamus montes. Magna amet,
-        elementum sed in. Sit egestas id pharetra et consequat, pharetra
-        sagittis, pretium. Et sed consequat turpis laoreet ligula non. Quam
-        nunc, porttitor semper integer. Id molestie leo tortor libero quis quis
-        egestas. Nisl, ullamcorper elit, integer tristique consectetur. Urna
-        convallis libero, urna id a cras nisl. Aliquet dictum felis nunc, metus,
-        volutpat purus risus donec ipsum.
+        In 2123, the 100th anniversary of the World War III has passed. The
+        Panda Family has also ruled the whole galaxy and began to move towards
+        more distant galaxies. But then came the intensification of internal
+        division. At this time, there were two camps: Light and Dark.
+        <br />
+        <br />
+        Light: advocate developing trade exchanges with other planets through
+        peace and friendship Dark : advocate colonizing and plundering other
+        planet resources by force
+        <br />
+        <br />
+        In 2141, the war of the Panda Family began between the stars
+        <br />
+        <br />
+        In 2169, on the Planet M78 of the Sagittarius α galaxy, a war between
+        the two camps of Light and Dark is about to break out, and Panda Punk
+        2169 kicks off...
       </div>
     </div>
     <div class="our-wrapper">
@@ -46,7 +55,12 @@
             <right-circle-outlined />
           </div>
         </template>
-        <div class="scroll-view" v-for="(v, i) in heros" :key="i" @click="openModal(v)">
+        <div
+          class="scroll-view"
+          v-for="(v, i) in heros"
+          :key="i"
+          @click="openModal(v)"
+        >
           <img class="hero" :src="v.img" alt="" />
         </div>
       </a-carousel>
@@ -58,9 +72,9 @@
 <script setup>
 import { ref } from "vue";
 import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons-vue";
-import HeroModalMobile from '@/components/HeroModal/mobile.vue'
+import HeroModalMobile from "@/components/HeroModal/mobile.vue";
 
-const heroVisible = ref(false)
+const heroVisible = ref(false);
 
 const heros = ref([
   {
@@ -92,11 +106,11 @@ const heros = ref([
   },
 ]);
 
-const img = ref('')
-const openModal = (v)=>{
-  heroVisible.value = true
-  img.value = v.img
-}
+const img = ref("");
+const openModal = (v) => {
+  heroVisible.value = true;
+  img.value = v.img;
+};
 
 const goTop = () => {
   document.getElementById("TheStory").scrollIntoView();

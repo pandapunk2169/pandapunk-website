@@ -128,6 +128,9 @@ const close = () => {
     .content {
       display: flex;
       align-items: top;
+      height: 600px;
+      margin-top: 20px;
+      overflow: auto;
       .hero-img {
         height: 547.8206176757812px;
         width: 381.93280029296875px;
