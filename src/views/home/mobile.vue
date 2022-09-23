@@ -72,16 +72,16 @@
 <script setup>
 import { ref } from "vue";
 import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons-vue";
-import HeroModalMobile from '@/components/HeroModal/mobile.vue'
-import { heros } from './index'
+import HeroModalMobile from "@/components/HeroModal/mobile.vue";
+import { heros } from "./index";
 
 const heroVisible = ref(false);
 
-const attrs = ref({})
-const openModal = (v)=>{
-  heroVisible.value = true
-  attrs.value = v
-}
+const attrs = ref({});
+const openModal = (v) => {
+  heroVisible.value = true;
+  attrs.value = v;
+};
 
 const goTop = () => {
   document.getElementById("TheStory").scrollIntoView();
