@@ -160,7 +160,7 @@ const goTop = () => {
   }
   .the-story {
     width: 100%;
-    height: 1000px;
+    min-height: 1000px;
     .title {
       width: 100%;
       text-align: center;
