@@ -129,9 +129,12 @@ const close = () => {
     .content {
       display: flex;
       align-items: top;
-      height: 600px;
-      margin-top: 20px;
+      height: 620px;
       overflow: auto;
+      &::-webkit-scrollbar {
+        width: 0px;
+        height: 6px;
+      }
       .hero-img {
         height: 547.8206176757812px;
         width: 381.93280029296875px;

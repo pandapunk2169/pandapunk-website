@@ -13,10 +13,27 @@
         </div>
       </div>
       <div class="right">
-        <img class="icon" src="/icon/twitter.png" />
-        <img class="icon" src="/icon/icon1.png" />
-        <img class="icon" src="/icon/Telegram.png" />
-        <img class="icon" src="/icon/Logomark.png" />
+        <a
+          href="https://twitter.com/PandaPunk2169"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="icon" src="/icon/twitter.png" />
+        </a>
+        <a
+          href="https://discord.com/fsS36Qbh7c"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="icon" src="/icon/icon1.png" />
+        </a>
+        <a
+          href="https://t.me/pandapunk2169"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="icon" src="/icon/Telegram.png" />
+        </a>
         <div class="sold-out" @click="soldOut">Connect Wallet</div>
       </div>
     </header>

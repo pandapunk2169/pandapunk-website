@@ -52,7 +52,7 @@
           <a-col v-for="(v, i) in heros" :key="i" :xxl="6" :xl="8"  :md="12"  :xs="24">
             <div class="hero-box">
               <img class="hero" :src="v.img" />
-              <div class="hero-name" @click="heroDetail(v)">View Stats</div>
+              <div class="hero-name" @click="heroDetail(v)">{{ v.Character }}</div>
             </div>
           </a-col>
         </a-row>
