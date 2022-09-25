@@ -58,6 +58,9 @@
         </a-row>
       </div>
     </div>
+    <div class="video-wrapper">
+      <video controls src="https://www.techstorm.tv/wp-content/uploads/2022/09/TheDrop_FINAL.mp4"></video>
+    </div>
     <!-- <div class="join-wrapper">
       <div class="title">JOIN THE PANDA PUNKS.</div>
     </div> -->

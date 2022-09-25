@@ -66,6 +66,14 @@
       </a-carousel>
     </div>
 
+    <div class="video-wrapper">
+      <!-- <div class="title">VIDEO</div> -->
+      <video
+        controls
+        src="https://www.techstorm.tv/wp-content/uploads/2022/09/TheDrop_FINAL.mp4"
+      ></video>
+    </div>
+
     <HeroModalMobile v-model:visible="heroVisible" :attrs="attrs" />
   </div>
 </template>
@@ -227,6 +235,29 @@ const goTop = () => {
     }
   }
 }
+
+.video-wrapper {
+  width: 100%;
+  // padding: 10px;
+  background-color: black;
+  .title {
+      width: 100%;
+      text-align: center;
+      font-family: "Orbitron";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 137.4%;
+      /* identical to box height, or 55px */
+
+      color: #ffffff;
+      padding: 50px 0 25px 0;
+    }
+  video {
+    width: 100%;
+  }
+}
+
 .ant-carousel :deep(.slick-slide) {
   text-align: center;
   overflow: hidden;
