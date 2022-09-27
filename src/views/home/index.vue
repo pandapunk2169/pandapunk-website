@@ -21,7 +21,7 @@
           <br />
           In 2058, due to the destruction of nuclear pollution and war, the
           earth's homeland has become uninhabitable, the panda family began to
-          seek immigration to Mars, and the MarsPanda plan began to be
+          seek immigration to Mars, and the Pandapunk plan began to be
           implemented...
         </div>
         <div class="right-content">
@@ -32,7 +32,10 @@
           <br />
           <br />
           Light: advocate developing trade exchanges with other planets through
-          peace and friendship Dark : advocate colonizing and plundering other
+          peace and friendship
+          <br>
+          <br>
+          Dark : advocate colonizing and plundering other
           planet resources by force
           <br />
           <br />
