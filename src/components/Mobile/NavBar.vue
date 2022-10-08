@@ -26,7 +26,7 @@
       >
         <img class="icon" src="/icon/twitter.png" />
       </a>
-      <a
+      <!-- <a
         href="https://discord.com/fsS36Qbh7c"
         target="_blank"
         rel="noopener noreferrer"
@@ -39,7 +39,7 @@
         rel="noopener noreferrer"
       >
         <img class="icon" src="/icon/Telegram.png" />
-      </a>
+      </a> -->
     </div>
   </div>
 </template>
@@ -124,7 +124,8 @@ const openModal = () => {
 .icons-wrapper {
   width: 180px;
   height: 24px;
-  display: flex;
+  // display: flex;
+  text-align: center;
   justify-content: space-between;
   align-items: center;
   margin: 57px auto 10px auto;

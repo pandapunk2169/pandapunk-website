@@ -31,7 +31,7 @@
       >
         <img class="icon" src="/icon/twitter.png" />
       </a>
-      <a
+      <!-- <a
         href="https://discord.com/fsS36Qbh7c"
         target="_blank"
         rel="noopener noreferrer"
@@ -44,7 +44,7 @@
         rel="noopener noreferrer"
       >
         <img class="icon" src="/icon/Telegram.png" />
-      </a>
+      </a> -->
       <!-- <img class="icon" src="/icon/Logomark.png" /> -->
     </div>
     <div class="tip">PandaPunk2169 Copyright@2022</div>
@@ -104,7 +104,8 @@
   .icons-wrapper {
     width: 180px;
     height: 24px;
-    display: flex;
+    // display: flex;
+    text-align: center;
     justify-content: space-between;
     align-items: center;
     margin: 20px auto 10px auto;
